@@ -18,6 +18,8 @@ def main():
         conversor("Mexican pounds", 20)
     if option==3:
         conversor("Argentina pounds",105)
+    if option==4:
+        conversor("CAD",1.28)
 
  
 if __name__ == '__main__':
