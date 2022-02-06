@@ -6,10 +6,11 @@ def conversor(moneyTipe, exchangeValue):
     print('You have: $'+dolar+' dolars')
 
 def main():
-    menu="""Welcome to the cambido's currency converter
+    menu="""Welcome to the cambindo's currency converter
     1-Colombian pounds
     2-Mexican pounds
     3-Argentina pounds
+    4-Canadian dolar
     Please select an option: """
     option=int(input(menu))
     if option==1:
@@ -20,7 +21,6 @@ def main():
         conversor("Argentina pounds",105)
     if option==4:
         conversor("CAD",1.28)
-
  
 if __name__ == '__main__':
     main()
