@@ -26,18 +26,29 @@
             </button>
         </form>
     </section>
-    <section>
-        <h2>Calcula el área y perimetro de un triangulo</h2>
-        <form action="">
-            <label for="inputLadosTriangulo">
-                Cuanto mide cada lado del triangulo
-            </label>
-            <input type="number" name="" id="inputLadosTriangulo">
-            <button type="button" onclick="calcularPerimetrotriangulo()"> 
-                Calcular el perímetro
-            </button>
-            <br>
-            <label for="inputAlturaTriangulo">
+<!-- AREA Y PERIMETRO DE LOS TRIANGULOS -->
+<!-- PERIMETRO DE TRIANGULOS -->
+<section>
+    <h2>Calcula el área y perimetro de un triangulo</h2>
+    <form action="">
+        <label for="inputLadosTriangulo">
+            Lados del triangulo. Lado 1
+        </label>
+        <input type="number" name="" id="inputTrianguloLado1">
+        <label for="inputLadosTriangulo">
+            Lado 2
+        </label>
+        <input type="number" name="" id="inputTrianguloLado2">
+        <label for="inputLadosTriangulo">
+            Lado 3
+        </label>
+        <input type="number" name="" id="inputTrianguloLado3">
+        <button type="button" onclick="calcularPerimetroTriangulo()"> 
+            Calcular el perímetro
+        </button>
+        <br>
+        <!-- AREA DE TRIANGULOS -->
+        <label for="inputAlturaTriangulo">
                 Altura del triángulo
             </label>
             <input type="number" name="" id="inputAlturaTriangulo">
@@ -52,7 +63,7 @@
             
         </form>
     </section>
-
+ 
     
 </body>
 </html>
