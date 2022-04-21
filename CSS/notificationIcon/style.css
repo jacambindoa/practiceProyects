@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.material-symbols-outlined{
+    font-size: 60px;
+}
+.notification{
+    width: 50px;
+    margin: 200px auto;
+    animation: ring 3s 0.7s ease-in-out infinite; 
+    transform-origin: 50% 4px;
+}
+.notification .count{
+    --size: 30px;
+    font-size:12px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: solid 2px #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    max-width: var(--size);
+    max-height: var(--size);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 50%;
+    top: 25px;
+    left: 25px;
+}
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+    }
+    1%{
+        transform: rotate(34deg);
+    }
+    3%{
+        transform: rotate(-32deg);
+    }
+    5%{
+        transform: rotate(30deg);
+    }
+    7%{
+        transform: rotate(-28deg);
+    }
+    10%{
+        transform: rotate(26deg);
+    }
+    15%{
+        transform: rotate(-24deg);
+    }
+    20%{
+        transform: rotate(22deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    30%{
+        transform: rotate(18deg);
+    }
+    35%{
+        transform: rotate(-16deg);
+    }
+    40%{
+        transform: rotate(14deg);
+    }
+    45%{
+        transform: rotate(-12deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    55%{
+        transform: rotate(-8deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    85%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
+}
