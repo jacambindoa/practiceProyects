@@ -15,11 +15,11 @@
             <form action="">
                 <p>
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username">
+                    <input type="text" class="input" name="username" id="username">
                 </p>
                 <p>
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
+                    <input type="text" class="input" name="password" id="password">
                 </p>
                 <div class="options">
                     <div>
@@ -27,11 +27,22 @@
                         <input type="checkbox" name="rememberme" id="rememberme">
                     </div>
                     <div>
-                        <a href="#">Forget yor password?</a>
+                        <a href="#">I forgot my password</a>
                     </div>
                 </div>
                 
+                <p><input type="submit" class="btn btn-login" value="login"/></p>
+                <div class="providers">
+                    <span>Choose another method to authenticate</span>
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-facebook">Facebook</button>
+                    <button class="btn btn-twitter">Twitter</button>
+                </div>
+
             </form>    
+        </div>
+        <div class="welcome-scren-container">
+
         </div>
     </div>
 </body>

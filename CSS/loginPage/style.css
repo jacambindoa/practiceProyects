@@ -1,0 +1,131 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(10, 88, 91);
+}
+.form-container{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.form-container .login-container{
+    width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.form-container .login-container > h2{
+    text-align: center;
+    font-size: 4rem;
+}
+.form-container .login-container > p, 
+.form-container .login-container > span{
+    text-align: center;
+    color: #555;
+}
+
+.form-container .login-container label{
+    display: block;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: solid .1rem #ccc;
+    border-radius: .5rem;
+} 
+.form-container .login-container input.input:focus{
+    outline: solid .2rem #2e626f;
+}
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container a{
+    color: #2e626f;
+    text-decoration:none;
+}
+.form-container a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    border: none;
+    padding: 1.5rem;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    margin: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.btn.btn-login{
+    background-color: black;
+    color: #fff;
+}
+.btn.btn-login:hover{
+    background-color: #000000bd;
+    color: #fff;
+}
+.btn.btn-facebook{
+    background-color: rgb(10, 82,216);
+    color: white;
+}
+.btn.btn-facebook:hover{
+    background-color: rgb(10, 37, 216);
+    color: white;
+}
+.btn.btn-google{
+    background-color: rgba(216, 34, 10, 0.887);
+    color: white;
+}
+.btn.btn-google:hover{
+    background-color: rgb(216, 10, 10);
+    color: white;
+}
+.btn.btn-twitter{
+    background-color: rgb(10, 168, 216);
+    color: white;
+}
+.btn.btn-twitter:hover{
+    background-color: rgb(10, 134, 216);
+    color: white;
+}
+.form-container .welcome-scren-container{
+    background-color: black;
+    height: 100%;
+    width:50%;
+}
+@media screen and (max-width: 1000px){
+    .form-container{
+        width: 95%;
+    }
+    .form-container .login-container{
+        width: 40rem;
+        margin: 0 auto;
+    }
+    .form-container .welcome-scren-container{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 800px){
+    .form-container .welcome-scren-container{
+        display: none;
+    }
+}
