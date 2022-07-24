@@ -4,6 +4,7 @@ import { moveBall } from "./teclado.js";
 import countdown from "./cuenta_regresiva.js";
 import scrollTopButton from "./boton_scroll.js"
 import darkTheme from "./tema_oscuro.js";
+import responsiveMedia from "./objeto_responsive.js";
 
 const d = document;
 
@@ -13,6 +14,8 @@ d.addEventListener("DOMContentLoaded", e => {
   alarm("assets/Alarma.mp3", "#activar-alarma", "#desactivar-alarma");
   countdown("countdown", "Jul 17, 2022 09:06:00", "Feliz Cumpleaños programador");
   scrollTopButton(".scroll-top-btn");
+  responsiveMedia ("youtube", "(min-width; 1024px)", "Contenido Móvil", "contenido Escritorio");
+  responsiveMedia ("gmaps", "(min-width; 1024px)", "Contenido Móvil", "contenido Escritorio");
 })
 
 d.addEventListener("keydown", e => {
