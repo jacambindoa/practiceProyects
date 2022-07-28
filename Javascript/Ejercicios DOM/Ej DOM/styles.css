@@ -66,6 +66,7 @@ img{
   left: 0;
   right: 0;
   width: 100%;
+  overflow-y: auto;
   background-color: var(--second-modal-color);
   opacity: 0;
   visibility: hidden;
@@ -202,6 +203,21 @@ img{
   color: var(--main-color); 
 }
 
+/* Network Status */
+.online,
+.offline{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color:#1b5e20;
+  color: #fff;
+}
 
-
+.offline{
+  background-color: #b71c1c;
+}
 

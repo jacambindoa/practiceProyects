@@ -7,6 +7,9 @@ import darkTheme from "./tema_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
+import networkStatus from "./deteccion_red.js";
+import webcam from "./deteccion_webcam.js";
+import getGeolocation from "./geolocalizacion.js";
 
 const d = document;
 
@@ -34,6 +37,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
   responsiveTester("responsive-tester");
   userDeviceInfo("user-device");
+  webcam("webcam");
+  getGeolocation("geolocation");
 });
 
 d.addEventListener("keydown", (e) => {
@@ -41,3 +46,4 @@ d.addEventListener("keydown", (e) => {
 });
 
 darkTheme(".dark-theme-btn", "dark-mode");
+networkStatus();
