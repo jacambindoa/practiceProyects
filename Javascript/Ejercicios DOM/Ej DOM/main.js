@@ -10,6 +10,9 @@ import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
 import webcam from "./deteccion_webcam.js";
 import getGeolocation from "./geolocalizacion.js";
+import searchFilters from "./filtro_busquedas.js";
+import draw from "./sorteo.js";
+import slider from "./carrusel.js";
 
 const d = document;
 
@@ -39,6 +42,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
   userDeviceInfo("user-device");
   webcam("webcam");
   getGeolocation("geolocation");
+  searchFilters(".card-filter", ".card");
+  draw("#winner-btn", ".player");
+  slider();
 });
 
 d.addEventListener("keydown", (e) => {
@@ -47,3 +53,4 @@ d.addEventListener("keydown", (e) => {
 
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
+
