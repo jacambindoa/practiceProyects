@@ -14,7 +14,8 @@ import searchFilters from "./filtro_busquedas.js";
 import draw from "./sorteo.js";
 import slider from "./carrusel.js";
 import scrollSpy from "./scroll_spia.js";
-import smartVideo from "./video_inteligente.js"
+import smartVideo from "./video_inteligente.js";
+import contactFormValidations from "./validaciones_formulario.js";
 
 const d = document;
 
@@ -49,6 +50,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   slider();
   scrollSpy();
   smartVideo();
+  contactFormValidations();
 });
 
 d.addEventListener("keydown", (e) => {
@@ -57,4 +59,3 @@ d.addEventListener("keydown", (e) => {
 
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
-
